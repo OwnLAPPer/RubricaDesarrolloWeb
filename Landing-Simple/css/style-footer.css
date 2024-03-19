@@ -1,0 +1,41 @@
+#footer{
+    max-width: 1152px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));  
+    gap: 72px;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu .column{
+    gap: 24px;
+}
+
+.menu .title{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.menu a, span{
+    font-size: 16px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.menu span{cursor: auto;}
+
+.menu a:hover{
+    text-decoration: underline;
+}
+
+@media(min-width: 1024px) {
+    #footer{
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 0px; 
+    }
+}
